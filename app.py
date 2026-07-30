@@ -103,9 +103,10 @@ elif page == "📤 Upload CSV":
     st.info("Choose one of the following options:")
 
     option = st.radio(
-        "Select Dataset",
-        ["📤 Upload Your Own CSV", "⭐ Use Sample Dataset"]
-    )
+    "Select Dataset",
+    ["⭐ Use Sample Dataset (Recommended)", "📤 Upload Your Own CSV"],
+    index=0
+    )   
 
     df = None
 
@@ -122,7 +123,8 @@ elif page == "📤 Upload CSV":
             st.success("✅ Dataset Uploaded Successfully")
 
     # ---------------- Sample Dataset ----------------
-    else:
+    elif option == "⭐ Use Sample Dataset (Recommended)":
+        
 
         sample_path = "dataset/sample_creditcard.csv"
 
