@@ -427,4 +427,4 @@ elif page == "ℹ️ About Project":
 
 # Footer
 st.markdown("---")
-st.caption("Developed for Academic Internship | Credit Card Fraud Detection using LOF")
+st.caption("Developed by Arnab Bol | Academic Internship, NIT Silchar")
